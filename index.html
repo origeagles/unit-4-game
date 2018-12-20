@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>unit-4-game</title>
+
+    <!-- linking reset css file -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- linking game's css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- bootstrap cdn link -->
+    <!-- jquery cdn link || disabled as bootstrap's cdn for jquery added. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- jquery cdn from bootstrap docs which has javascript compatibility included -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- <h1 id="main-header"></h1> -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="main-header">Crystals Collector!</h1>
+            <p class="lead lead-1">You will be given a random number at the start of the game.</p>
+            <p class="lead lead-2">There are four crystals below. By clicking on a crystal you will add a specific
+                amount
+                of points to your total score.</p>
+            <p class="lead lead-3">You win the game by matching your total score to the random number, you lose the
+                game if
+                your total score goes above the random number.</p>
+            <p class="lead lead-4">The value of each crystal is hidden from you until you click on it.</p>
+            <p class="lead lead-5">Each time when a new game starts, the game will change the values of each crystal.</p>
+            <hr class="my-4">
+            <p class="lead lead-6">Good Luck!</p>
+            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row row1">
+        <div class="col-12 col-md-6 targetScoreHeader">Your score to achieve : </div>
+        <div class="col-12 col-md-2 targetScore">""</div>
+        <hr>
+        <div class="col-6 col-md-3 winsLossHeader"><p id="winsHeader">Wins: </p> <p id="lossHeader">Loss :</p></div>
+        <div class="col-6 col-md-1 winsLoss"><p id="wins">""</p> <p id="loss">""/p></div>
+    </div>
+
+    <hr>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row row2">
+        <div class="col-6 col-md-3 goldenCrystal crystal"><img src="images/goldenCrystal.jpg" class="img-thumbnail rounded float-left" alt="goldenCrystal" style="width: 200px;height: 200px;"></div>
+        <div class="col-6 col-md-3 greenCrystal crystal"><img src="images/greenCrystal.jpg" class="img-thumbnail rounded float-center" alt="greenCrystal" style="width: 200px;height: 200px;"></div>
+        <div class="col-6 col-md-3 indicoCrystal crystal"><img src="images/indicoCrystal.jpg" class="img-thumbnail rounded float-center" alt="indicoCrystal" style="width: 200px;height: 200px;"></div>
+        <div class="col-6 col-md-3 pinkCrystal crystal"><img src="images/pinkCrystal.jpg" class="img-thumbnail rounded float-right" alt="pinkCrystal" style="width: 200px;height: 200px;"></div>
+    </div>
+
+    <hr>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row row3">
+        <div class="col-6 yourScoreHeader your">Your running total score is: </div>
+        <div class="col-6 yourScore your">""</div>
+    </div>
+
+
+
+
+
+  <!-- link to the game javascript file at the end of the body of html -->
+  <script src="javascript/game.js"></script>
+
+</body>
+
+</html>
