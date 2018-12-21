@@ -4,7 +4,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: auto;
-    opacity: .95;
+    opacity: .85;
     padding: 10px;
     margin: 5px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -50,24 +50,34 @@ body {
     display: inline-flex;
 }
 
+#wild1 {
+    padding: 5px;
+    text-align: center;
+}
+
 .row1 {
     background-color: aquamarine;
     align-content: space-around;
     font-size: 35px;
+    border: 2px royalblue;
+    padding: 15px;
 }
 
 .targetScore {
-    padding: 10px;
     font-size: 50px;
+    margin: 10px;
+    text-align: center;
 }
 
-.winsLosses {
-    padding: 15px;
+#wild {
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
 }
 
 .crystal {
     /* flex-direction: row; */
-    justify-content: left;
+    /* justify-content: left; */
     margin: auto;
     padding: 20px;
 }
